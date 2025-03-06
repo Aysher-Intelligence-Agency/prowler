@@ -1447,12 +1447,8 @@ class TestProviderGroupViewSet:
                 "id": str(group.id),
                 "type": "provider-groups",
                 "relationships": {
-                    "providers": {
-                        "data": []  # Removing all providers
-                    },
-                    "roles": {
-                        "data": []  # Removing all roles
-                    },
+                    "providers": {"data": []},  # Removing all providers
+                    "roles": {"data": []},  # Removing all roles
                 },
             }
         }
@@ -3564,12 +3560,8 @@ class TestRoleViewSet:
                 "id": str(role.id),
                 "type": "roles",
                 "relationships": {
-                    "users": {
-                        "data": []  # Clearing all users
-                    },
-                    "provider_groups": {
-                        "data": []  # Clearing all provider groups
-                    },
+                    "users": {"data": []},  # Clearing all users
+                    "provider_groups": {"data": []},  # Clearing all provider groups
                 },
             }
         }
