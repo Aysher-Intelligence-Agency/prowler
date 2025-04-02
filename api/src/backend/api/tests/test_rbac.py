@@ -1,7 +1,8 @@
+from unittest.mock import ANY, Mock, patch
+
 import pytest
 from django.urls import reverse
 from rest_framework import status
-from unittest.mock import patch, ANY, Mock
 
 
 @pytest.mark.django_db
