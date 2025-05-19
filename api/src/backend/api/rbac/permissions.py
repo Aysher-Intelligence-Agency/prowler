@@ -1,9 +1,11 @@
 from enum import Enum
-from rest_framework.permissions import BasePermission
-from api.models import Provider, Role, User
-from api.db_router import MainRouter
 from typing import Optional
+
 from django.db.models import QuerySet
+from rest_framework.permissions import BasePermission
+
+from api.db_router import MainRouter
+from api.models import Provider, Role, User
 
 
 class Permissions(Enum):
